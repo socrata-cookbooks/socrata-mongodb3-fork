@@ -84,7 +84,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
 
     chef.run_list = [
-      'recipe[mongodb3::default]'
+      'recipe[socrata-mongodb3-fork::default]'
     ]
   end
 end

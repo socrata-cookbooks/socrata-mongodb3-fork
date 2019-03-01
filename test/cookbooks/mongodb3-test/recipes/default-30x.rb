@@ -24,4 +24,4 @@ node.set['mongodb3']['version'] = '3.0.11'
 # node.set['mongodb3']['package']['version'] = '3.2.4'
 # node.set['mongodb3']['package']['repo']['apt']['name'] = '3.2'
 
-include_recipe 'mongodb3::default'
+include_recipe 'socrata-mongodb3-fork::default'

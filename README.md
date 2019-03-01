@@ -354,58 +354,58 @@ default['mongodb3']['config']['mms']['enableMunin'] = nil
 
 ## Usage
 
-### mongodb3::default
+### socrata-mongodb3-fork::default
 
 Install and configure the mongod or config server instance.
 
-Include `mongodb3::default` in your node's `run_list`:
+Include `socrata-mongodb3-fork::default` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[mongodb3::default]"
+    "recipe[socrata-mongodb3-fork::default]"
   ]
 }
 ```
 
-### mongodb3::mongos
+### socrata-mongodb3-fork::mongos
 
 Install and configure the mongos.
 
-Include `mongodb3::mongos` in your node's `run_list`:
+Include `socrata-mongodb3-fork::mongos` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[mongodb3::mongos]"
+    "recipe[socrata-mongodb3-fork::mongos]"
   ]
 }
 ```
 
-### mongodb3::mms\_automation_agent
+### socrata-mongodb3-fork::mms\_automation_agent
 
 Install the MMS Automation Agent.
 
-Include `mongodb3::mms_automation_agent` in your node's `run_list`:
+Include `socrata-mongodb3-fork::mms_automation_agent` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[mongodb3::mms_automation_agent]"
+    "recipe[socrata-mongodb3-fork::mms_automation_agent]"
   ]
 }
 ```
 
-### mongodb3::mms\_monitoring_agent
+### socrata-mongodb3-fork::mms\_monitoring_agent
 
 Install the MMS Monitoring Agent.
 
-Include `mongodb3::mms_monitoring_agent` in your node's `run_list`:
+Include `socrata-mongodb3-fork::mms_monitoring_agent` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[mongodb3::mms_monitoring_agent]"
+    "recipe[socrata-mongodb3-fork::mms_monitoring_agent]"
   ]
 }
 ```
@@ -414,12 +414,12 @@ Include `mongodb3::mms_monitoring_agent` in your node's `run_list`:
 
 ### Default mongod.conf file contents
 
-Simply `mongodb3::default` recipe with none of additional attribute setting
+Simply `socrata-mongodb3-fork::default` recipe with none of additional attribute setting
 
 ```json
 {
   "run_list": [
-    "recipe[mongodb3::default]"
+    "recipe[socrata-mongodb3-fork::default]"
   ]
 }
 ```
@@ -470,7 +470,7 @@ You can set the config attribute on node or wrapper recipe.
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::default]"
+    "recipe[socrata-mongodb3-fork::default]"
   ],
   "env_run_lists": {
   }
@@ -528,7 +528,7 @@ You can set the config attribute on node or wrapper recipe.
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::default]"
+    "recipe[socrata-mongodb3-fork::default]"
   ],
   "env_run_lists": {
   }
@@ -598,7 +598,7 @@ You can set the config attribute on node or wrapper recipe.
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::default]"
+    "recipe[socrata-mongodb3-fork::default]"
   ],
   "env_run_lists": {
   }
@@ -662,7 +662,7 @@ You can set the config attribute on node or wrapper recipe.
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::mongos]"
+    "recipe[socrata-mongodb3-fork::mongos]"
   ],
   "env_run_lists": {
   }
@@ -712,7 +712,7 @@ You can set the config attribute on node or wrapper recipe.
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::mms_automation_agent]"
+    "recipe[socrata-mongodb3-fork::mms_automation_agent]"
   ],
   "env_run_lists": {
   }
@@ -817,7 +817,7 @@ You can set the config attribute on node or wrapper recipe.
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::mms_monitoring_agent]"
+    "recipe[socrata-mongodb3-fork::mms_monitoring_agent]"
   ],
   "env_run_lists": {
   }

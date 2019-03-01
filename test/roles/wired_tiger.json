@@ -32,7 +32,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::default]"
+    "recipe[socrata-mongodb3-fork::default]"
   ],
   "env_run_lists": {
   }
