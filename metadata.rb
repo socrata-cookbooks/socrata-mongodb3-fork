@@ -4,7 +4,7 @@ maintainer_email 'sysadmin@socrata.com'
 license          'Apache 2.0'
 description      'Installs/Configures mongodb3'
 long_description 'Installs/Configures mongodb3'
-version          '999.0.0'
+version          '999.0.1'
 
 supports 'ubuntu', '>= 12.04'
 supports 'debian', '= 7.8'
