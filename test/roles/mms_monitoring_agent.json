@@ -15,7 +15,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::mms_monitoring_agent]"
+    "recipe[socrata-mongodb3-fork::mms_monitoring_agent]"
   ],
   "env_run_lists": {
   }

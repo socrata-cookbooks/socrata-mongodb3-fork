@@ -17,7 +17,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mongodb3::mongos]"
+    "recipe[socrata-mongodb3-fork::mongos]"
   ],
   "env_run_lists": {
   }

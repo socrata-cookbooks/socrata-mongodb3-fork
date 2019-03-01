@@ -37,4 +37,4 @@ mms_data_bag = mms_data_bag_item['environments'][node.chef_environment]
 node.set['mongodb3']['config']['mms']['mmsGroupId'] = mms_data_bag['mms_group_id']
 node.set['mongodb3']['config']['mms']['mmsApiKey'] = mms_data_bag['mms_api_key']
 
-include_recipe 'mongodb3::mms_automation_agent'
+include_recipe 'socrata-mongodb3-fork::mms_automation_agent'
