@@ -28,7 +28,7 @@ install_package.each do |pkg|
     case node['platform_family']
       when 'debian'
         # bypass dpkg errors about pre-existing init or conf file
-        options '-o Dpkg::Options::="--force-confold" --force-yes'
+        options '-o Dpkg::Options::="--force-confold"'
     end
     action :install
   end
