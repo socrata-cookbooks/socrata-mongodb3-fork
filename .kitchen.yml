@@ -34,6 +34,12 @@ platforms:
     attributes:
       apt:
         compile_time_update: true
+  - name: ubuntu-18.04
+    run_list:
+    - recipe[apt]
+    attributes:
+      apt:
+        compile_time_update: true
   - name: debian-7.8
     run_list:
     - recipe[apt]
@@ -59,7 +65,7 @@ suites:
     driver:
       vm_hostname: mongo3
     run_list:
-      - recipe[mongodb3::default]
+      - recipe[socrata-mongodb3-fork::default]
     attributes:
       chef_client:
         config:
@@ -242,7 +248,7 @@ suites:
       vm_hostname: mongo3
     run_list:
       - recipe[mongodb3-test::amazon]
-      - recipe[mongodb3::default]
+      - recipe[socrata-mongodb3-fork::default]
     attributes:
       chef_client:
         config:
